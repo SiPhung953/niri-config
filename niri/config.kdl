@@ -269,6 +269,10 @@ layout {
 
 spawn-at-startup "waybar"
 spawn-at-startup "fcitx5" "-d"
+spawn-at-startup "swaybg" "-i" "/home/siphung/Pictures/Wallpapers/eleanor.png"
+spawn-at-startup "nm-applet" "--indicator"
+spawn-at-startup "blueman-applet"
+spawn-at-startup "swayidle" "-w" "timeout" "300" "swaylock" "timeout" "600" "systemctl suspend" "before-sleep" "swaylock"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
